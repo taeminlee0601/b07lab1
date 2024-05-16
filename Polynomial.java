@@ -30,9 +30,9 @@ public class Polynomial {
     }
 
     public double evaluate(double value) {
-        double result = this.coefficients[0];
+        double result = 0;
 
-        for (int i = 1; i < this.coefficients.length; i++) {
+        for (int i = 0; i < this.coefficients.length; i++) {
             result += this.coefficients[i] * Math.pow(value, i);
         }
 
